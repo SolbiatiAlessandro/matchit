@@ -1,0 +1,14 @@
+/* pages/client-research/client-research.wxss */
+.research {
+
+  height: 50px;
+  width: 500px;
+  background-color: #333E4D;
+  font-size: 30px;
+  color: white;
+  padding-top: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
