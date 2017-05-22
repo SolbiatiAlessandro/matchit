@@ -1,0 +1,55 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey;
+  width: 500px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+.logoview{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: palevioletred;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-bottom: 10rpx;
+  
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  font-size: 18px;
+  margin: 20px;
+  color: darkslategrey;
+}
+
+.usermotto {
+  margin-top: 10px;
+}
+
+.foreignbridge {
+  height: 30px;
+  width: 500px;
+  background-color: #333E4D;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+
+}
+
+
+
+       

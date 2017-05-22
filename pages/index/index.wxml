@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="foreignbridge">
+  matchit
+  </view>
+  <view class="logoview">
+    <image class="logo-view" src="logo.png"></image>
+
+  </view>
+      <text class="userinfo-nickname">{{userInfo.nickName}}, tell us about you</text>
+  <view bindtap="bindStudentTap">
+    <button class="myButton" > I am an exchange student </button>
+  </view>
+  <view bindtap="bindClientTap">
+    <button class="myButton"> I am looking for foreigners</button>
+  </view>
+  <view  bindtap="bindViewTap" class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
+</view>
+
