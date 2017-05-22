@@ -1,0 +1,52 @@
+<view class="container">
+
+  <view class="CESC">
+    <text>matchit</text>
+  </view>
+
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+  <text class="userinfo-nickname">{{userInfo.nickName}}, what are you looking for?</text>
+
+<view class="" style="margin-top:30px;">
+  <button id="money" class="myButton">
+    <image class="cat_image" src="glyphicons-38-coins.png"></image>
+    <view class="text-view" style="margin-bottom:10px;">
+      <text class="title">{{job_title}}</text>
+    </view>
+    <view class="text-view">
+      <text class="content">{{job_content}}</text>
+    </view>    
+  </button>
+  <button id="house" class="myButton">
+    <image class="cat_image" src="glyphicons-21-home.png"></image>
+    <view class="text-view" style="margin-bottom:10px;">
+      <text class="title">{{house_title}}</text>
+    </view>
+    <view class="text-view">
+      <text class="content">{{house_content}}</text>
+    </view>    
+  </button>
+</view>
+<view class="">
+  <button id="entertainment" class="myButton">
+    <image class="cat_image" src="glyphicons-1-glass.png"></image>
+    <view class="text-view" style="margin-bottom:10px;">
+      <text class="title">{{night_title}}</text>
+    </view>
+    <view class="text-view">
+      <text class="content">{{night_content}}</text>
+    </view>    
+  </button>
+  <button id="leisure" class="myButton">
+    <image class="cat_image" src="glyphicons-341-globe.png"></image>
+    <view class="text-view" style="margin-bottom:10px;">
+      <text class="title">{{event_title}}</text>
+    </view>
+    <view class="text-view">
+      <text class="content">{{event_content}}</text>
+    </view>    
+  </button>
+</view>
+
+</view>

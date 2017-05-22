@@ -1,0 +1,79 @@
+/* pages/student/student.wxss */
+.cat_image {
+    height: 30px;
+  width: 30px;
+  margin-bottom: 15px;
+  padding: 0;
+
+}
+
+.myButton {
+  
+  margin-top: 0px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 0px;
+   height: 170px;
+   width: 170px;
+	-moz-box-shadow:inset 0px 0px 5px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 5px 0px #ffffff;
+	box-shadow:inset 0px 0px 5px 0px #ffffff;
+	background-color:#ededed;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:3px solid palevioletred;
+	display: inline-block;
+	cursor:pointer;
+	color:black;
+
+	font-size:28px;
+	font-weight:bold;
+	padding-top:30px;
+	text-decoration:none;
+	text-shadow:0px 10px 10px #ffffff;
+  line-height: 20px;
+}
+.myButton:hover {
+	background-color:#dfdfdf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 13px;   
+}
+
+.text-view {
+  line-height: 13px;
+}
+
+.CESC {
+
+  height: 50px;
+  width: 500px;
+  background-color: #333E4D;
+  font-size: 30px;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+
+        
