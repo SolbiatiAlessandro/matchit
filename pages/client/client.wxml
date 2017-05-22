@@ -1,0 +1,7 @@
+<!--pages/client/client.wxml-->
+<text>pages/client/client.wxml</text>
+<text>work in progress, client introduction. Click button to go to research</text>
+
+  <view bindtap="bindClientTap">
+    <button class="myButton"> Look for resources around you</button>
+  </view>
