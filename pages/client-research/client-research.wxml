@@ -5,46 +5,61 @@
   </view>
   <view class="logoview">
     <image class="logo-view" src="logo.png"></image>
-
   </view>
+
+     
+
+ 
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 200px; text-align:center;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{_d}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{_t1}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{_t2}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  
+ <view class="weui-panel" style="width: 100%;margin-top:0;">
+            <view class="weui-panel__hd">Schedule your teacher</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{d}}, {{t1}} - {{t2}}</view>
+                    <view class="weui-media-box__desc">max distance: {{distance}} km <slider bindchange="slider_distance" min="10" max="100" show-value value="80"/>
+                    </view>
+                  
+                </view>
+            </view>
+        </view>
+
  
 
-<view class="section">
-    <view class="sectiontitle">时间选择器</view>
-    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-        <view class="picker">
-            当前选择: {{start_time}}
-        </view>
-    </picker>
-</view>
 
-<view class="section">
-    <view class="sectiontitle">时间选择器</view>
-    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-        <view class="picker">
-            当前选择: {{end_time}}
-        </view>
-    </picker>
-</view>
-
-<view class="section">
-    <view class="sectiontitle">日期选择器</view>
-    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-        <view class="picker">
-            当前选择: {{date}}
-        </view>
-    </picker>
-</view>
-
-<view class="section section_gap">
-    <text class="section__title">Distance</text>
-    <view class="body-view">
-        <slider bindchange="slider4change" min="50" max="200" show-value/>
-    </view>
-</view>
-
-  <view bindtap="bindClientResearch">
+  <view bindtap="bindClientResearch" style="margin:20px;">
     <button class="myButton"> Research</button>
   </view>
+
+
+
+    <view class="page-section" style="margin-top:0px;">
+      <view class="page-section-spacing" style="margin-top:0px;">
+        <scroll-view scroll-y="true" style="height: 800rpx;width:450px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+          <view id="demo1" class="scroll-view-item research-text-1">
+           <text> {{userInfo.nickName}}, here are the best people we found for you.</text>
+           <view><image class="cat_image" src="glyphicons-213-arrow-down.png"></image>
+           </view>
+          </view>
+          <view id="demo2"  class="scroll-view-item demo-text-2" style="background-color:white;">
+           <view class="log-list">
+              <block  wx:for="{{research_result}}" wx:for-item="name">
+               <text class="log-item" >{{name}}</text>
+             </block>
+            </view></view>
+        </scroll-view>
+      </view>
+    </view>
+
 
 </view>
